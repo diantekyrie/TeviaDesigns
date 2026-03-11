@@ -43,6 +43,15 @@
 #about img.portrait {
   display: block;
   margin: 0 auto 12px auto;
+  width: min(320px, 80vw);
+  height: auto;
+  max-width: 100%;
+}
+
+/* Override theme's computed portrait margins (keeps image centered) */
+#about .portrait {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Portfolio page header images: show the full image instead of cropping */

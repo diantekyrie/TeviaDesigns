@@ -20,7 +20,7 @@ unsafe = true
 
   [params.about]
     layout = "classic"
-    portrait_percentage = 80
+    portrait_percentage = 100
 
   [params.navigation]
     brand = "Tevia Designs"
