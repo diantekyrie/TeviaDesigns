@@ -16,13 +16,14 @@ unsafe = true
     favicon = "favicon.ico"
 
   [params.homepage]
-    sections = [ "about", "projects", "contact" ]
+    sections = [ "about", "services", "projects", "contact" ]
 
   [params.navigation]
     brand = "Tevia Designs"
     brand_logo = "images/tevia-logo-navbar.png"
     [params.navigation.links]
       about = "ABOUT"
+      services = "SERVICES & PRICING"
       projects = [ { section = "portfolio", label = "PORTFOLIO" } ]
       contact = "CONTACT"
 

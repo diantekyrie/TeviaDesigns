@@ -1,13 +1,18 @@
 ---
-title: "SERVICES"
+title: "SERVICES & PRICING"
 services:
-- name: "Custom Garments"
-  icon: "chalkboard-teacher-solid"
-  text: "Design and construction from sketch to final fitting."
-- name: "Alterations & Tailoring"
-  icon: "window-restore-solid"
-  text: "Precise tailoring for fit, comfort, and confidence."
-- name: "Bridal & Formal"
-  icon: "concierge-bell-solid"
-  text: "Special-occasion pieces with fine detailing and couture finishes."
+- name: "Basic"
+  icon: "ruler-combined-solid"
+  text: "Quick tailoring for everyday wear. Great for hemming, simple repairs, and minor fit adjustments."
+  list: [ "Hems & length adjustments", "Simple repairs", "Minor take-in/let-out" ]
+
+- name: "Standard"
+  icon: "tshirt-solid"
+  text: "Custom pieces and tailored updates with a more refined fit and finish."
+  list: [ "Custom tops & skirts", "Dress adjustments", "Lining & finishing details" ]
+
+- name: "Premium"
+  icon: "gem-solid"
+  text: "Couture-level work for statement pieces and special events with multiple fittings."
+  list: [ "Bridal & formalwear", "Complex redesigns", "Hand-finished detailing" ]
 ---
