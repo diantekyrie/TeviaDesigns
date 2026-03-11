@@ -1,0 +1,39 @@
+preserveTaxonomyNames = "true"
+
+baseURL = "https://teviadesigns.com/"
+languageCode = "en-us"
+title = "Tevia Designs"
+theme = "hugo-myportfolio-theme"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  [params.meta]
+    author = "Tevia Designs"
+    description = "Custom seamstress portfolio for Tevia Designs."
+    favicon = "favicon.ico"
+
+  [params.homepage]
+    sections = [ "home", "about", "projects", "contact" ]
+
+  [params.navigation]
+    brand = "Tevia Designs"
+    [params.navigation.links]
+      about = "ABOUT"
+      projects = [ { section = "portfolio", label = "PORTFOLIO" } ]
+      contact = "CONTACT"
+
+  [params.projects]
+    categories = [ "portfolio" ]
+    sections_order = "title"
+    sections_order_reverse = false
+    posts_order = "date"
+    posts_order_reverse = true
+    date_format = "01/2006"
+    period_format = "{start} - {end}"
+    period_format_startonly = "{start} - Present"
+
+  [params.contact]
+    title_align = "right"
+    title_length = 4

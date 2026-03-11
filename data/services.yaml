@@ -1,0 +1,13 @@
+---
+title: "SERVICES"
+services:
+- name: "Custom Garments"
+  icon: "chalkboard-teacher-solid"
+  text: "Design and construction from sketch to final fitting."
+- name: "Alterations & Tailoring"
+  icon: "window-restore-solid"
+  text: "Precise tailoring for fit, comfort, and confidence."
+- name: "Bridal & Formal"
+  icon: "concierge-bell-solid"
+  text: "Special-occasion pieces with fine detailing and couture finishes."
+---

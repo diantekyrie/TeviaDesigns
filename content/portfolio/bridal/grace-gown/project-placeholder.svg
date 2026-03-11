@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#f4f0ee"/>
+  <rect x="70" y="70" width="760" height="460" fill="#ffffff" stroke="#e2d4cc" stroke-width="4"/>
+  <text x="450" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#8a6f63">Grace Gown</text>
+  <text x="450" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#b1988b">Photo coming soon</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f6f1ed"/>
+  <rect x="60" y="60" width="680" height="480" fill="#ffffff" stroke="#e6d8cf" stroke-width="4"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#8a6f63">Bridal Collection</text>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#b1988b">Image coming soon</text>
+</svg>
