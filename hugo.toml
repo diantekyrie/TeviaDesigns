@@ -19,6 +19,7 @@ unsafe = true
 
   [params.navigation]
     brand = "Tevia Designs"
+    brand_logo = "images/tevia-logo.png"
     [params.navigation.links]
       about = "ABOUT"
       projects = [ { section = "portfolio", label = "PORTFOLIO" } ]

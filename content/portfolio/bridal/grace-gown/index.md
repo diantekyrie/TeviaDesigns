@@ -1,7 +1,7 @@
 +++
 title = "Grace Gown"
 subtitle = "Silk satin with hand-finished lace"
-image = "project-placeholder.svg"
+image = "grace-gown.jpg"
 categories = [ "bridal" ]
 tags = [ "gown", "lace", "satin" ]
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Bridal"
 subtitle = "Custom gowns and veils"
-small_image = "category-placeholder.svg"
+small_image = "bridal-cover.jpg"
 posts_title = "GOWNS:"
 +++
 
