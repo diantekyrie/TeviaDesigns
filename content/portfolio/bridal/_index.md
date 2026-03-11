@@ -1,7 +1,7 @@
 +++
 title = "Gowns or Tops"
 subtitle = "Custom gowns and tops"
-small_image = "bridal-cover.jpg"
+small_image = "collection-thumb.png"
 posts_title = "GOWNS:"
 +++
 
