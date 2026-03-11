@@ -1,0 +1,5 @@
+{{ "<!-- HEADER.HTML -->" | safeHTML }}
+<div class="site-banner">
+  <img src="{{ "images/tevia-header-footer.png" | absURL }}" alt="Tevia Designs" />
+</div>
+{{ partial "nav.html" (dict "context" . "fixed" false) }}

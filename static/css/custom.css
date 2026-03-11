@@ -7,6 +7,20 @@
   width: auto;
 }
 
+.site-banner {
+  width: 100%;
+  background: white;
+}
+
+.site-banner img {
+  max-width: min(1100px, 96vw);
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
 .navbar-default .navbar-header .navbar-brand {
   padding-top: 6px;
   padding-bottom: 6px;
