@@ -18,6 +18,10 @@ unsafe = true
   [params.homepage]
     sections = [ "about", "services", "projects", "contact" ]
 
+  [params.about]
+    layout = "classic"
+    portrait_percentage = 80
+
   [params.navigation]
     brand = "Tevia Designs"
     brand_logo = "images/tevia-logo-navbar.png"
