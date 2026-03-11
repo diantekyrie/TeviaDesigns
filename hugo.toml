@@ -16,7 +16,7 @@ unsafe = true
     favicon = "favicon.ico"
 
   [params.homepage]
-    sections = [ "home", "about", "projects", "contact" ]
+    sections = [ "about", "projects", "contact" ]
 
   [params.navigation]
     brand = "Tevia Designs"
