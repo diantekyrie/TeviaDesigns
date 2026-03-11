@@ -1,0 +1,19 @@
+/* Make the navbar logo actually visible */
+#brand_logo {
+  position: relative;
+  top: auto;
+  transform: none;
+  height: 48px;
+  width: auto;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* Portfolio page header images: show the full image instead of cropping */
+.header-image {
+  background-size: contain;
+  background-color: white;
+}

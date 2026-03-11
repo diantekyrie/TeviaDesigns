@@ -9,6 +9,7 @@ theme = "hugo-myportfolio-theme"
 unsafe = true
 
 [params]
+  custom_css = [ "custom.css" ]
   [params.meta]
     author = "Tevia Designs"
     description = "Custom seamstress portfolio for Tevia Designs."
@@ -19,7 +20,7 @@ unsafe = true
 
   [params.navigation]
     brand = "Tevia Designs"
-    brand_logo = "images/tevia-logo.png"
+    brand_logo = "images/tevia-header-footer.png"
     [params.navigation.links]
       about = "ABOUT"
       projects = [ { section = "portfolio", label = "PORTFOLIO" } ]
