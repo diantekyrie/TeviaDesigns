@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tevia Designs | Custom Orders</title>
+    <meta
+      name="description"
+      content="Start a custom Tevia Designs request with your sizing, timeline, and design details."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-bar">
+          <a class="brand-mark" href="./index.html" aria-label="Tevia Designs home">
+            <img src="./assets/images/tevia-header-footer.png" alt="Tevia Designs" />
+          </a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="./index.html">Home</a>
+            <a href="./collection.html">Collection</a>
+            <a href="./custom-orders.html" aria-current="page">Custom Orders</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./process.html">The Process</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="section page-hero">
+          <div class="page-hero-content reveal">
+            <p class="eyebrow">Custom orders</p>
+            <h1>Use the size guide, measure yourself, and send a clear request</h1>
+            <p class="hero-text">
+              This page gives customers a US size reference, measurement instructions, and a form
+              where they can enter the details Tevia needs before production starts.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#request-form">Enter measurements</a>
+              <a class="button button-secondary" href="./process.html">See the process</a>
+            </div>
+          </div>
+          <div class="page-hero-media media-placeholder reveal reveal-delay">
+            <span>Measurement prep</span>
+            <strong>Keep a soft tape measure nearby</strong>
+            <p>Measure over fitted clothing and keep the tape level without pulling too tight.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="split-layout">
+            <div class="process-card reveal">
+              <p class="eyebrow">Before you submit</p>
+              <h3>Measure with care and use the charts as a reference only</h3>
+              <ol class="process-list">
+                <li>
+                  <strong>Pick the closest category</strong>
+                  <span>Choose your gender group and garment type before filling in your measurements.</span>
+                </li>
+                <li>
+                  <strong>Use a soft tape measure</strong>
+                  <span>Measure your chest or bust, waist, hips, inseam, sleeve, and shoulder as needed.</span>
+                </li>
+                <li>
+                  <strong>Add notes about fit</strong>
+                  <span>Include whether you prefer a close fit, relaxed fit, or room to grow for children.</span>
+                </li>
+              </ol>
+            </div>
+
+            <form class="request-form reveal reveal-delay" id="request-form">
+              <label>
+                Your name
+                <input type="text" id="customer-name" name="customerName" placeholder="Your name" />
+              </label>
+              <label>
+                Gender group
+                <select id="customer-gender" name="customerGender">
+                  <option value="man">Man</option>
+                  <option value="woman">Woman</option>
+                  <option value="child girl">Child girl</option>
+                  <option value="child boy">Child boy</option>
+                  <option value="toddler girl">Toddler girl</option>
+                  <option value="toddler boy">Toddler boy</option>
+                  <option value="teen boy">Teen boy</option>
+                  <option value="teen girl">Teen girl</option>
+                </select>
+              </label>
+              <label>
+                What are you interested in?
+                <select id="request-type" name="requestType">
+                  <option value="a dress or skirt">A dress or skirt</option>
+                  <option value="pants">Pants</option>
+                  <option value="a custom outfit set">A custom outfit set</option>
+                  <option value="a child outfit">A child outfit</option>
+                  <option value="an alteration">An alteration</option>
+                </select>
+              </label>
+              <label>
+                Closest US size
+                <input type="text" id="reference-size" name="referenceSize" placeholder="Example: Women 10, Men M, Child 8" />
+              </label>
+              <label>
+                Timeline
+                <input
+                  type="text"
+                  id="request-timeline"
+                  name="timeline"
+                  placeholder="Birthday in June, photoshoot next week, no rush, etc."
+                />
+              </label>
+              <label>
+                Details or customization ideas
+                <textarea
+                  id="request-details"
+                  name="details"
+                  rows="6"
+                  placeholder="Color ideas, fit notes, inspiration, item name, or any changes you want."
+                ></textarea>
+              </label>
+              <div class="form-section">
+                <p class="eyebrow">Measurements</p>
+                <div class="measurement-fields">
+                  <label>
+                    Height
+                    <input type="text" id="measurement-height" name="measurementHeight" placeholder="5'7&quot; or 128 cm" />
+                  </label>
+                  <label>
+                    Chest / Bust
+                    <input type="text" id="measurement-chest" name="measurementChest" placeholder="Inches" />
+                  </label>
+                  <label>
+                    Waist
+                    <input type="text" id="measurement-waist" name="measurementWaist" placeholder="Inches" />
+                  </label>
+                  <label>
+                    Hips
+                    <input type="text" id="measurement-hips" name="measurementHips" placeholder="Inches" />
+                  </label>
+                  <label>
+                    Inseam
+                    <input type="text" id="measurement-inseam" name="measurementInseam" placeholder="Inches" />
+                  </label>
+                  <label>
+                    Shoulder
+                    <input type="text" id="measurement-shoulder" name="measurementShoulder" placeholder="Inches" />
+                  </label>
+                  <label>
+                    Sleeve
+                    <input type="text" id="measurement-sleeve" name="measurementSleeve" placeholder="Inches" />
+                  </label>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="button button-primary" type="submit">Prepare text request</button>
+                <a class="button button-secondary" href="tel:+14156103924">Call 415-610-3924</a>
+              </div>
+              <p class="form-note">
+                The form creates a text message draft for the client. If texting is unavailable,
+                they can copy the message and call instead.
+              </p>
+              <div class="message-preview" id="message-preview" aria-live="polite"></div>
+            </form>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">How to measure</p>
+            <h2>Measure in the places listed below</h2>
+            <p>Use these instructions before typing your numbers into the custom order form.</p>
+          </div>
+
+          <div class="measure-guide-grid">
+            <article class="measure-card reveal">
+              <h3>Chest / Bust</h3>
+              <p>Wrap the tape around the fullest part of the chest or bust and keep it level across the back.</p>
+            </article>
+            <article class="measure-card reveal">
+              <h3>Waist</h3>
+              <p>Measure around the natural waistline, usually the narrowest part above the hips.</p>
+            </article>
+            <article class="measure-card reveal">
+              <h3>Hips</h3>
+              <p>Measure around the fullest part of the hips and seat while standing naturally.</p>
+            </article>
+            <article class="measure-card reveal">
+              <h3>Inseam</h3>
+              <p>Measure from the top of the inner thigh down to the desired pant length.</p>
+            </article>
+            <article class="measure-card reveal">
+              <h3>Shoulder</h3>
+              <p>Measure straight across from one shoulder point to the other across the upper back.</p>
+            </article>
+            <article class="measure-card reveal">
+              <h3>Sleeve</h3>
+              <p>Measure from the shoulder point down the arm to the wrist or desired sleeve finish.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">American sizing charts</p>
+            <h2>Reference charts for men, women, and children</h2>
+            <p>These are general US size references to help customers pick a starting point.</p>
+          </div>
+
+          <div class="chart-grid">
+            <article class="chart-card reveal">
+              <h3>Women</h3>
+              <div class="table-wrap">
+                <table class="size-table">
+                  <thead>
+                    <tr>
+                      <th>US Size</th>
+                      <th>Bust</th>
+                      <th>Waist</th>
+                      <th>Hips</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>2</td><td>32</td><td>24</td><td>34</td></tr>
+                    <tr><td>4</td><td>33</td><td>25</td><td>35</td></tr>
+                    <tr><td>6</td><td>34</td><td>26</td><td>36</td></tr>
+                    <tr><td>8</td><td>35</td><td>27</td><td>37</td></tr>
+                    <tr><td>10</td><td>36</td><td>28</td><td>38</td></tr>
+                    <tr><td>12</td><td>38</td><td>30</td><td>40</td></tr>
+                    <tr><td>14</td><td>40</td><td>32</td><td>42</td></tr>
+                    <tr><td>16</td><td>42</td><td>34</td><td>44</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="chart-card reveal">
+              <h3>Men</h3>
+              <div class="table-wrap">
+                <table class="size-table">
+                  <thead>
+                    <tr>
+                      <th>Size</th>
+                      <th>Chest</th>
+                      <th>Waist</th>
+                      <th>Hips</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>XS</td><td>34-36</td><td>28-30</td><td>35-37</td></tr>
+                    <tr><td>S</td><td>36-38</td><td>30-32</td><td>37-39</td></tr>
+                    <tr><td>M</td><td>38-40</td><td>32-34</td><td>39-41</td></tr>
+                    <tr><td>L</td><td>42-44</td><td>36-38</td><td>43-45</td></tr>
+                    <tr><td>XL</td><td>46-48</td><td>40-42</td><td>47-49</td></tr>
+                    <tr><td>2XL</td><td>50-52</td><td>44-46</td><td>51-53</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="chart-card reveal">
+              <h3>Children</h3>
+              <div class="table-wrap">
+                <table class="size-table">
+                  <thead>
+                    <tr>
+                      <th>Size</th>
+                      <th>Height</th>
+                      <th>Chest</th>
+                      <th>Waist</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>2T</td><td>33-35</td><td>21</td><td>20.5</td></tr>
+                    <tr><td>4T</td><td>39-41</td><td>23</td><td>21.5</td></tr>
+                    <tr><td>5</td><td>42-44</td><td>24</td><td>22</td></tr>
+                    <tr><td>6</td><td>45-46</td><td>25</td><td>22.5</td></tr>
+                    <tr><td>8</td><td>50-52</td><td>27</td><td>23.5</td></tr>
+                    <tr><td>10</td><td>53-55</td><td>28.5</td><td>24.5</td></tr>
+                    <tr><td>12</td><td>56-59</td><td>30</td><td>25.5</td></tr>
+                    <tr><td>14</td><td>60-62</td><td>31.5</td><td>26.5</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <img src="./assets/images/tevia-logo.png" alt="Tevia Designs logo" />
+        <p>Text or call 415-610-3924</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
