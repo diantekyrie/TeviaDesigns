@@ -323,6 +323,10 @@ textarea {
   transform: translateY(-2px);
 }
 
+.button[hidden] {
+  display: none;
+}
+
 .button-primary {
   background: var(--accent);
   color: #fffaf7;
@@ -808,10 +812,46 @@ textarea {
   align-items: center;
 }
 
+.contact-panel > div:first-child {
+  flex: 1;
+}
+
+.contact-actions {
+  flex-direction: column;
+  align-items: stretch;
+  min-width: min(100%, 260px);
+}
+
 .contact-link {
-  min-width: 220px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.35rem;
   border: 1px solid rgba(151, 95, 78, 0.18);
   background: rgba(255, 255, 255, 0.75);
+}
+
+.contact-link.is-desktop-static {
+  cursor: default;
+}
+
+.button.is-desktop-static,
+.button.is-template-pending {
+  cursor: default;
+}
+
+.button.is-desktop-static:hover,
+.button.is-desktop-static:focus-visible,
+.button.is-template-pending:hover,
+.button.is-template-pending:focus-visible,
+.contact-link.is-desktop-static:hover,
+.contact-link.is-desktop-static:focus-visible {
+  transform: none;
+}
+
+.button.is-template-pending {
+  opacity: 0.8;
 }
 
 .site-footer {

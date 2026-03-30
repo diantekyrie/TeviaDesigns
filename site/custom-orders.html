@@ -153,12 +153,19 @@
                 </div>
               </div>
               <div class="form-actions">
-                <button class="button button-primary" type="submit">Prepare text request</button>
-                <a class="button button-secondary" href="tel:+14156103924">Call 415-610-3924</a>
+                <button class="button button-primary mobile-only-action" type="submit">Prepare text request</button>
+                <a
+                  class="button button-secondary google-form-link"
+                  data-form-template-href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
+                >
+                  Google Form intake
+                </a>
+                <a class="button button-secondary" data-mobile-href="tel:+14156103924">Call 415-610-3924</a>
               </div>
               <p class="form-note">
-                The form creates a text message draft for the client. If texting is unavailable,
-                they can copy the message and call instead.
+                On mobile, “Prepare text request” opens the default messaging app. The Google Form
+                intake button is set up and can be activated as soon as your final Google Forms URL
+                is added.
               </p>
               <div class="message-preview" id="message-preview" aria-live="polite"></div>
             </form>

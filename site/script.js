@@ -1,4 +1,11 @@
 const revealItems = document.querySelectorAll(".reveal");
+const mobileActionLinks = document.querySelectorAll("[data-mobile-href]");
+const mobileOnlyActions = document.querySelectorAll(".mobile-only-action");
+const googleFormLinks = document.querySelectorAll("[data-form-template-href]");
+
+const isMobileDevice =
+  window.matchMedia("(pointer: coarse)").matches ||
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -15,6 +22,52 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => revealObserver.observe(item));
+
+mobileActionLinks.forEach((link) => {
+  const mobileHref = link.dataset.mobileHref;
+
+  if (!mobileHref) {
+    return;
+  }
+
+  if (isMobileDevice) {
+    link.setAttribute("href", mobileHref);
+    link.removeAttribute("aria-disabled");
+    link.classList.remove("is-desktop-static");
+    return;
+  }
+
+  link.removeAttribute("href");
+  link.setAttribute("aria-disabled", "true");
+  link.classList.add("is-desktop-static");
+});
+
+mobileOnlyActions.forEach((action) => {
+  if (isMobileDevice) {
+    action.hidden = false;
+    action.disabled = false;
+    return;
+  }
+
+  action.hidden = true;
+  action.disabled = true;
+});
+
+googleFormLinks.forEach((link) => {
+  const formHref = link.dataset.formTemplateHref;
+  const isConfigured = formHref && !formHref.includes("YOUR_FORM_ID");
+
+  if (isConfigured) {
+    link.setAttribute("href", formHref);
+    link.removeAttribute("aria-disabled");
+    link.classList.remove("is-template-pending");
+    return;
+  }
+
+  link.removeAttribute("href");
+  link.setAttribute("aria-disabled", "true");
+  link.classList.add("is-template-pending");
+});
 
 const requestForm = document.querySelector("#request-form");
 const preview = document.querySelector("#message-preview");
