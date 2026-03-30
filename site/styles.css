@@ -216,8 +216,20 @@ textarea {
   object-fit: cover;
 }
 
+.page-hero-media video,
+.process-media-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .page-hero-media {
   min-height: 460px;
+}
+
+.process-hero-media {
+  overflow: hidden;
 }
 
 .feature-link-grid {
@@ -657,7 +669,8 @@ textarea {
 .measure-guide-grid,
 .chart-grid,
 .process-grid,
-.timeline-grid {
+.timeline-grid,
+.process-media-grid {
   display: grid;
   gap: 1rem;
 }
@@ -676,6 +689,10 @@ textarea {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.process-media-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .measure-card,
 .chart-card,
 .timeline-card {
@@ -685,6 +702,36 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.62);
   box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
+}
+
+.process-media-card {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.process-media-card video {
+  aspect-ratio: 9 / 16;
+  background: #e9dfd6;
+}
+
+.process-media-copy {
+  padding: 1.25rem;
+}
+
+.process-media-copy h3 {
+  margin: 0 0 0.75rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+}
+
+.process-media-copy p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.7;
 }
 
 .measure-card h3,
@@ -898,7 +945,8 @@ textarea {
   .measure-guide-grid,
   .chart-grid,
   .process-grid,
-  .timeline-grid {
+  .timeline-grid,
+  .process-media-grid {
     grid-template-columns: 1fr;
   }
 
